@@ -1,0 +1,290 @@
+html body {
+   width: 100%;
+   height: 100%;
+   background-color: #E9E5DD;
+   font-size: 20px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+}
+.body-container {
+   font-size: 20px;
+   width: 100%; 
+   grid-template-columns: 1fr;
+   grid-gap: 40px;
+   background-color: #E9E5DD; 
+   align-items: center;
+   justify-items: center;
+   text-align: center;  
+   padding-top: 300px;
+   padding-bottom: 300px;
+}
+
+nav ul{
+   display: flex; 
+   align-items: center;
+   justify-content: space-between; 
+   width: 100%;
+}
+
+.evy-design-link {
+   font-size: 58px; 
+   margin-right: 700px; 
+   padding-top: 60px;
+}
+
+nav {
+   width: 100%;
+   padding-left: 0px; 
+
+}
+
+header nav {
+   display: flex;
+   align-items: center;
+  
+}
+header nav button {
+   margin-right: -30px; 
+   background: none;
+   border: none;
+   cursor: pointer;
+
+}
+nav button {
+   padding: 10px 12px;
+   margin-right: 5px;
+
+}
+
+header nav ul li {
+   padding: 0 10px;
+}
+header nav ul li a {
+   text-decoration: none;
+   font-size: 24px;
+   color:#101010
+}
+    
+header {
+background-color: #868473;
+padding: 0px;
+height: 100px;
+padding-bottom: 5px;
+padding-top: 5px;
+padding-right: 44px;
+padding-left: 47px;
+
+}
+header li
+{
+   display: inline;
+   padding-left: 1px;
+}
+
+header li a:hover
+{
+color:#88511E;
+}
+.body-container h1{
+   padding-right: 650px; 
+}
+.body-container p{
+   padding-left:240px;
+}
+
+
+.body-container {
+   background-image: url(designer.png);
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+}
+
+
+footer {
+   background-image: url(footerimg.png);
+   background-size: cover;
+   background-position: center;
+   background-color:#E9E5DD;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   width: 100%;
+}
+
+.footer-column {
+   flex: 1;
+   padding: 0 20px;
+}
+
+.footer-container {
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+}
+
+.footer-content {
+   width: 100%;
+   justify-content: space-around;
+   margin-top: -20px;
+}
+
+h3 {
+   font-size: 24px;
+   margin-bottom: 50px;
+   text-align: left;
+   justify-content: space-around;
+}
+p {
+   text-align: left;
+   justify-content: space-around;
+   
+   font-size: 20px;
+}
+.footer-column h3 {
+  padding-left: 50px;
+}
+.footer-column p {
+  padding-left: 50px;
+  margin-right: 60px;
+}
+
+
+.list li::before{
+position: absolute;
+transform: translate(-50%,-50%);
+left: 1000%;
+top: 100%;
+width: 0;
+height: 2px;
+background: #E9E5DD;
+transition: .5s;
+}
+.list li:hover::before {
+width: 70px;
+}
+
+.social-icons {
+   text-align: left;
+   padding-left: 100px;
+   justify-content: space-around;
+   padding-left: 48px;
+}
+.social-icons li {
+display: inline-block;
+text-align: left;
+}
+
+.footerbox {
+flex-basis: 100px;
+justify-content: space-around;
+}
+
+.icon {
+   height: 40px;
+   width: 40px;
+   margin-right:20px;
+   margin-top: 20px;
+   border-radius: 9px;
+
+}
+
+   .image-container img.background-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+   }
+
+   @media only screen and (max-width: 1200px) {
+      .evy-design-link {
+         margin-right: 300px;
+      }
+      .body-container{
+         padding-top: 200px;
+         padding-bottom: 200px;
+   }
+     .body-container {
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+  }
+  nav ul {
+     flex-direction: column;
+     align-items: flex-start;
+  }
+  nav ul li {
+     margin-bottom: 10px;
+  }
+  nav ul li a {
+  margin-right: 0;
+  }
+   .footer-container {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .footer-content {
+      width: 100%;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .evy-design-link {
+      font-size: 38px;
+      margin-right: 20px;
+   }
+
+   nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .body-container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+   }
+   h3, p {
+      padding-left: 20px;
+    }
+  
+   .footer-container {
+     flex-direction: column;
+     align-items: center;
+   }
+   .footer-column {
+     margin-bottom: 20px;
+   }
+   .social-icons {
+     padding-left: 20px;
+    }
+   }
+
+
+   @media only screen and (max-width: 480px) {
+      .evy-design-link {
+         font-size: 38px;
+         margin-right: 20px;
+       }
+      nav ul {
+      justify-content: center;
+       }
+      .body-container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width: 600px;
+      } 
+      
+      header nav ul li a {
+         font-size: 20px;
+       }
+      h3, p {
+         padding: 10px;
+       }
+       .footer-container {
+         padding: 10px;
+         width: 700px;
+       }
+       .icon {
+         height: 30px;
+         width: 30px;
+      }
+   }

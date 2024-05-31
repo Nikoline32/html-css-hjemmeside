@@ -1,0 +1,363 @@
+html body {
+   width: 100%;
+   height: 100%;
+   background-color: #E9E5DD;
+   font-size: 20px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+
+}
+.body-container {
+   font-size: 20px;
+   display: grid;
+   width: 100%; 
+   grid-template-columns: 1fr;
+   grid-gap: 40px;
+   background-color: #E9E5DD; 
+   align-items: center;
+   justify-items: center;
+   text-align: center;  
+   padding-top: 400px;
+   padding-bottom: 400px;
+}
+/*min menu/navbar*/
+nav ul{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+ }
+ 
+ .evy-design-link {
+    font-size: 58px; 
+    margin-right: 700px; 
+    
+    padding-left: 40px;
+ }
+ 
+ nav {
+    width: 100%;
+    padding-left: 0px; 
+
+ }
+ 
+ header nav {
+    display: flex;
+    align-items: center;
+   
+ }
+ header nav button {
+    margin-right: -23px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+ 
+ }
+ nav button {
+    padding: 10px 12px;
+    margin-right: 5px;
+
+ }
+ 
+ header nav ul li {
+    padding: 0 10px;
+ }
+ header nav ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color:#1E1B1B;
+ }
+    
+ header {
+   background-color: #868473;
+   padding: 0px;
+   height: 100px;
+   padding-bottom: 5px;
+   padding-top:5px;
+   padding-right: 45px;
+   padding-left: px;
+ }
+header li
+{
+   display: inline;
+   padding-left: 0px;
+}
+
+header li a:hover
+{
+color:#88511E;
+}
+
+/*kontakt mig felt*/
+ .contact-container {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+ }
+ .contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-left: 350px;
+ }
+ .contact-left-title h2{
+    font-weight: 600;
+    color: #1E1B1B;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+ }
+ .contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #88511E;
+    border-radius: 10px;
+    margin-bottom: 20px;
+ }
+ .contact-inputs{
+    width: 400px;
+    border: 50px;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #868473;
+    border-radius: 50px;
+ }
+ .contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    margin-right: 20px;
+ }
+ .contact-inputs:focus {
+    border: 2px solid #88511E;
+ }
+ .contact-inputs::placeholder{
+    color:#88511E;
+ }
+ .contact-left button {
+    display:flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #88511E;
+    gap: 10px;
+    border-radius: 50px;
+    background: whitesmoke;
+ } 
+
+ /*grafisk design billede*/  
+ .contact-right img {
+    align-items: center;
+    margin-top: 5px;
+    width: 450px;
+    height: 400px;
+    margin-right: 300px;
+   }
+/*sidens footer*/
+ footer {
+   background-image: url(footerimg.png);
+   background-size: cover;
+   background-position: center;
+   background-color:#E9E5DD;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   width: 100%;
+}
+
+.footer-column {
+flex: 1;
+padding: 0 20px;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+}
+
+.footer-content {
+ width: 50%;
+ justify-content: space-around;
+ margin-top: -20px;
+}
+
+/*tekst i footer*/
+h3 {
+font-size: 24px;
+margin-bottom: 50px;
+text-align: left;
+justify-content: space-around;
+}
+p {
+text-align: left;
+justify-content: space-around;
+   
+font-size: 20px;
+}
+.footer-column h3 {
+padding-left: 50px;
+}
+.footer-column p {
+  padding-left: 50px;
+  margin-right: 60px;
+}
+
+/*sidens Sociale medie ikonliste*/
+.list li:before{
+position: absolute;
+transform: translate(-50%,-50%);
+top: 100%;
+width: 0;
+height: 2px;
+background: #E9E5DD;
+transition: .5s;
+}
+.list li:hover::before {
+width: 70px;
+}
+
+.social-icons {
+text-align: left;
+padding-left: 100px;
+justify-content: space-around;
+padding-left: 48px;
+}
+.social-icons li {
+display: inline-block;
+text-align: left;
+}
+
+.footerbox {
+flex-basis: 100px;
+justify-content: space-around;
+}
+
+.icon {
+height: 40px;
+width: 40px;
+margin-right:20px;
+margin-top: 20px;
+border-radius: 9px;
+
+}
+/*baggrundsbillede i min footer*/
+   .image-container img.background-image {
+      width: 100%;
+      height: auto;
+      display: block;
+   }
+ 
+/*responsiv til computer*/    
+@media only screen and (max-width: 1200px) {     
+nav ul {
+flex-direction: column;
+align-items: flex-start;
+}
+nav ul li {
+margin-bottom: 10px;
+}
+nav ul li a {
+margin-right: 0;
+}
+.contact-left {
+ margin-left: 50px;
+}
+.contact-right img {
+margin-right: 50px;
+ }
+ }
+
+/*responsiv til mindre skærme*/
+   @media only screen and (max-width: 768px) {
+   .evy-design-link {
+      font-size: 38px;
+      margin-right: 20px;
+   }
+
+   nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .body-container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+   }
+   h3, p {
+      padding-left: 20px;
+    }
+  
+   .footer-container {
+     flex-direction: column;
+     align-items: center;
+   }
+   .footer-column {
+     margin-bottom: 20px;
+   }
+   .social-icons {
+     padding-left: 20px;
+    }
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+     }
+     .contact-left {
+      margin-left: 0;
+      align-items: center;
+      text-align: center;
+     }
+     .contact.left-title h2 {
+   margin-left: 0;
+     }
+     .contact-left textarea {
+      margin-right: 0;
+     }
+     .contact-right img {
+      margin-right: 0;
+      margin-top: 20px;
+     }
+   }
+   
+ /*responsv til mobil*/  
+@media only screen and (max-width: 480px) {
+.evy-design-link {
+   font-size: 38px;
+   margin-right: 20px;
+ }
+nav ul {
+justify-content: center;
+ }
+.body-container {
+padding-top: 50px;
+padding-bottom: 50px;
+        
+}
+header nav ul li a {
+   font-size: 20px;
+ }
+h3, p {
+   padding: 10px;
+ }
+ .footer-container {
+   padding: 10px;
+ }
+ .icon {
+   height: 30px;
+   width: 30px;
+}
+  .contact-left-title h2 {
+    width: 100px;
+ }
+ .contact-left button {
+   font-size: 18px;
+   padding: 10px 20px;
+ }
+ .contact-right img {
+   width: 100%;
+}
+}
